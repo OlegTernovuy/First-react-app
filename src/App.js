@@ -9,9 +9,10 @@ const AddTodo = React.lazy(() => import('./Todo/AddTodo'))
 
 function App() {
   const [todos, setTodos] = React.useState([
-    {id: 1, completed: false, title: 'To cook'},
+    {id: 1, completed: true, title: 'To cook'},
     {id: 2, completed: false, title: 'Go to the gym'},
-    {id: 3, completed: false, title: 'Walk with friends'}
+    {id: 3, completed: false, title: 'Walk with friends'},
+    {id: 4, completed: false, title: 'Watch movie'}
   ])
   const [loading, setLoading] = React.useState(true)
 
